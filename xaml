@@ -1,0 +1,51 @@
+<Window x:Class="IP_szamitas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IP_szamitas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF2EA8F5">
+        <TextBox Name ="ipegy" HorizontalAlignment="Left" Margin="125,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Height="34" MaxLength="3" FontFamily="Arial Black" FontSize="24" TextAlignment="Center"/>
+        <TextBox Name="ipketto" HorizontalAlignment="Left" Margin="199,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Height="34" MaxLength="3" FontFamily="Arial Black" FontSize="24" TextAlignment="Center"/>
+        <TextBox Name="ipharom" HorizontalAlignment="Left" Margin="273,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Height="34" MaxLength="3" FontFamily="Arial Black" FontSize="24" TextAlignment="Center"/>
+        <TextBox Name="ipnegy" HorizontalAlignment="Left" Margin="347,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Height="34" MaxLength="3" FontFamily="Arial Black" FontSize="24" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="63" Margin="160,42,0,0" TextWrapping="Wrap" Text="IP cím" VerticalAlignment="Top" Width="222" TextAlignment="Center" FontSize="36" FontFamily="Bauhaus 93" Foreground="White"/>
+        <ComboBox HorizontalAlignment="Left" Margin="506,99,0,0" VerticalAlignment="Top" Width="141" Height="34" FontFamily="Arial Black" FontSize="24">
+            <ComboBoxItem Name="a" Content="1"/>
+            <ComboBoxItem Name="b" Content="2"/>
+            <ComboBoxItem Name="c" Content="3"/>
+            <ComboBoxItem Name="d" Content="4"/>
+            <ComboBoxItem Name="e" Content="5"/>
+            <ComboBoxItem Name="f" Content="6"/>
+            <ComboBoxItem Name="g" Content="7"/>
+            <ComboBoxItem Name="h" Content="8"/>
+            <ComboBoxItem Name="i" Content="9"/>
+            <ComboBoxItem Name="j" Content="10"/>
+            <ComboBoxItem Name="k" Content="11"/>
+            <ComboBoxItem Name="l" Content="12"/>
+            <ComboBoxItem Name="m" Content="13"/>
+            <ComboBoxItem Name="n" Content="14"/>
+            <ComboBoxItem Name="o" Content="15"/>
+            <ComboBoxItem Name="p" Content="16"/>
+            <ComboBoxItem Name="q" Content="17"/>
+            <ComboBoxItem Name="r" Content="18"/>
+            <ComboBoxItem Name="s" Content="19"/>
+            <ComboBoxItem Name="t" Content="20"/>
+            <ComboBoxItem Name="u" Content="21"/>
+            <ComboBoxItem Name="v" Content="22"/>
+            <ComboBoxItem Name="w" Content="23"/>
+            <ComboBoxItem Name="x" Content="24"/>
+            <ComboBoxItem Name="y" Content="25"/>
+            <ComboBoxItem Name="z" Content="26"/>
+            <ComboBoxItem Name="aa" Content="27"/>
+            <ComboBoxItem Name="ab" Content="28"/>
+            <ComboBoxItem Name="ac" Content="29"/>
+            <ComboBoxItem Name="ad" Content="30"/>
+            <ComboBoxItem Name="ae" Content="31"/>
+            <ComboBoxItem Name="af" Content="32"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Height="53" Margin="451,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" TextAlignment="Center" FontSize="36" FontFamily="Bauhaus 93" Foreground="White"><Run Language="hu-hu" Text="Hálózati mask"/><LineBreak/><Run Language="hu-hu"/></TextBlock>
+    </Grid>
+</Window>
