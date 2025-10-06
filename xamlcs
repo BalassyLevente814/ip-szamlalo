@@ -1,0 +1,46 @@
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace IP_szamitas
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public int ipa;
+        public int ipb;
+        public int ipc;
+        public int ipd;
+        public int mask;
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+        public void Konvertál (int ipa, int ipb, int ipc, int ipd, int mask)
+        {
+            string bin1 = Convert.ToString(ipa, 2);
+            string bin2 = Convert.ToString(ipb, 2);
+            string bin3 = Convert.ToString(ipc, 2);
+            string bin4 = Convert.ToString(ipd, 2);
+            string maszk = "1";
+            string maskigaz = Convert.ToString(mask * Convert.ToInt32(maszk));
+            for (int i = 0; i < 32; i++)
+            {
+                if ((bin1 == "1" || bin2 == "1" || bin3 == "1" || bin4 == "1") && maskigaz == "1")
+                {
+
+                }
+            }
+            
+        }
+    }
+}
