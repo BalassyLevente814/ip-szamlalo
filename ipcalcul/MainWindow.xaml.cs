@@ -26,18 +26,18 @@ namespace IPv4Calculator
 
                 for (int i = 0; i < 4; i++)
                 {
-                    networkBytes[i] = (byte)(ipBytes[i] & maskBytes[i]);
-                    broadcastBytes[i] = (byte)(networkBytes[i] | (~maskBytes[i]));
+                    networkBytes[i] = (byte)(ipBytes[i] & maskBytes[i]); // ip pl: 11111 + mask pl: 10100 = 10100 hálózati cím
+                    broadcastBytes[i] = (byte)(networkBytes[i] | (~maskBytes[i])); // hoszt megtalálása a cél azért fordítjuk meg a maskbytejait
                 }
 
-                IPAddress network = new IPAddress(networkBytes);
+                IPAddress network = new IPAddress(networkBytes); // eltároljuk őket 
                 IPAddress broadcast = new IPAddress(broadcastBytes);
 
                 int cidr = 0;
                 foreach (byte b in maskBytes)
                     cidr += CountBits(b);
 
-                int hosts = (int)Math.Pow(2, 32 - cidr) - 2;
+                int hosts = (int)Math.Pow(2, 32 - cidr) - 2;// iszámoljuk a hosztok számát, 2on-ra emeljük, mert minden hostbit vagy 0 v 1, 32 a max és abból kivonjuk a prefixet, ami megadja mennyi a lehetséges hosztbit
 
                 IPAddress firstHost = IncrementIPAddress(network);
                 IPAddress lastHost = DecrementIPAddress(broadcast);
